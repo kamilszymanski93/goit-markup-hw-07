@@ -21,23 +21,31 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header class="header-wrapper">
+    <!-- Nagłówek menu makiety -->
+    <header class="header">
       <div class="container">
-        <nav class="header-navigation">
+        <nav class="header__navigation">
           <a class="logo" href="index.html"
             >Web<span class="header-studio">Studio</span></a
           >
-          <ul class="nav-list">
-            <li><a class="nav-link nav-link-active" href="#">Agencja</a></li>
+          <!-- Menu makiety -->
+          <ul class="header__navigation-list">
             <li>
-              <a class="nav-link" href="portfolio.html">Portfolio</a>
+              <a class="header__navigation-link nav-link-active" href="#"
+                >Agencja</a
+              >
             </li>
-            <li><a class="nav-link" href="#">Kontakt</a></li>
+            <li>
+              <a class="header__navigation-link" href="portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li><a class="header__navigation-link" href="#">Kontakt</a></li>
           </ul>
         </nav>
-        <ul class="contact-list">
+        <ul class="header__contact-list">
           <li>
-            <a class="nav-contact" href="mailto:info@devstudio.com"
+            <a class="header__contact-item" href="mailto:info@devstudio.com"
               ><svg class="mail-icon" width="16" height="12">
                 <use href="images/icons.svg#icon-mail-icon"></use>
               </svg>
@@ -45,7 +53,7 @@
             >
           </li>
           <li>
-            <a class="nav-contact" href="tel:+48-111-111-111"
+            <a class="header__contact-item" href="tel:+48-111-111-111"
               ><svg class="smartphone-icon" width="10" height="16">
                 <use href="images/icons.svg#icon-smartphone-icon"></use>
               </svg>
@@ -56,12 +64,14 @@
       </div>
     </header>
     <main>
+      <!-- Sekcja usługi -->
       <section class="service section">
         <div class="container">
           <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
           <button type="button" data-modal-open>Zamów usługę</button>
         </div>
       </section>
+      <!-- Sekcja wartości -->
       <section class="section">
         <div class="container">
           <ul class="primary-list">
@@ -108,6 +118,7 @@
           </ul>
         </div>
       </section>
+      <!-- Czym się zajmujemy -->
       <div class="container">
         <h2 class="what-we-do">Czym się zajmujemy</h2>
         <ul class="portfolio-list-main">
@@ -146,6 +157,7 @@
           </li>
         </ul>
       </div>
+      <!-- Nasz zespół -->
       <section class="team-section section">
         <div class="container">
           <h2 class="team-title">Nasz zespół</h2>
@@ -297,6 +309,7 @@
           </ul>
         </div>
       </section>
+      <!-- Nasi klienci -->
       <section class="section">
         <div class="container">
           <h2 class="clients-title">Nasi klienci</h2>
@@ -335,8 +348,10 @@
         </div>
       </section>
     </main>
+    <!-- Stopka -->
     <footer class="footer-section">
       <div class="container footer-container">
+        <!-- Logo i kontakt -->
         <div>
           <a class="logo" href="index.html"
             >Web<span class="footer-studio">Studio</span></a
@@ -356,6 +371,7 @@
             >
           </address>
         </div>
+        <!-- Nasze socialmedia -->
         <div class="footer-icons">
           <h3>Dołącz do nas</h3>
 
@@ -383,6 +399,7 @@
             </li>
           </ul>
         </div>
+        <!-- Newsletter -->
         <div class="form-box">
           <h3>Zapisz się do newslettera</h3>
           <form style="display: flex; align-items: center">
@@ -398,7 +415,7 @@
         </div>
       </div>
     </footer>
-
+    <!-- Okno modalne  -->
     <div class="modal is-hidden" data-modal>
       <div class="modal-box">
         <button class="modal-close-button" data-modal-close>
@@ -407,7 +424,7 @@
           </svg>
         </button>
         <h3 class="modal-title">Zostaw swoje dane w formularzu poniżej</h3>
-
+        <!-- Formularz -->
         <form class="modal-form">
           <label class="modal-form-label" for="user-name"> Imię</label>
           <div class="modal-form-wrapper">
@@ -460,6 +477,7 @@
                 <use href="images/icons.svg#icon-check"></use>
               </svg>
             </div>
+            <!-- Regulamin -->
             <span
               >Oświadczam iż akceptuję
               <a href="#">Regulamin</a>

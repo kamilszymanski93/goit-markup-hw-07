@@ -21,23 +21,29 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header class="header-wrapper">
+    <!-- Nagłówek menu makiety -->
+    <header class="header">
       <div class="container">
-        <nav class="header-navigation">
+        <nav class="header__navigation">
           <a class="logo" href="index.html"
             >Web<span class="header-studio">Studio</span></a
           >
-          <ul class="nav-list">
-            <li><a class="nav-link" href="index.html">Agencja</a></li>
+          <!-- Menu makiety -->
+          <ul class="header__navigation-list">
             <li>
-              <a class="nav-link nav-link-active" href="#">Portfolio</a>
+              <a class="header__navigation-link" href="index.html">Agencja</a>
             </li>
-            <li><a class="nav-link" href="#">Kontakt</a></li>
+            <li>
+              <a class="header__navigation-link nav-link-active" href="#"
+                >Portfolio</a
+              >
+            </li>
+            <li><a class="header__navigation-link" href="#">Kontakt</a></li>
           </ul>
         </nav>
-        <ul class="contact-list">
+        <ul class="header__contact-list">
           <li>
-            <a class="nav-contact" href="mailto:info@devstudio.com"
+            <a class="header__contact-item" href="mailto:info@devstudio.com"
               ><svg class="mail-icon" width="16" height="12">
                 <use href="images/icons.svg#icon-mail-icon"></use>
               </svg>
@@ -45,7 +51,7 @@
             >
           </li>
           <li>
-            <a class="nav-contact" href="tel:+48-111-111-111"
+            <a class="header__contact-item" href="tel:+48-111-111-111"
               ><svg class="smartphone-icon" width="10" height="16">
                 <use href="images/icons.svg#icon-smartphone-icon"></use>
               </svg>
@@ -56,6 +62,7 @@
       </div>
     </header>
     <main class="section">
+      <!-- Menu sekcji Portfolio -->
       <div class="container">
         <ul class="portfolio-nav-buttons">
           <li>
@@ -74,6 +81,7 @@
             <button>Marketing</button>
           </li>
         </ul>
+        <!-- Nasze Portfolio -->
         <ul class="portfolio-list">
           <li>
             <figure>
@@ -296,8 +304,10 @@
         </ul>
       </div>
     </main>
+    <!-- Stopka -->
     <footer class="footer-section">
       <div class="container footer-container">
+        <!-- Logo i kontakt -->
         <div>
           <a class="logo" href="index.html"
             >Web<span class="footer-studio">Studio</span></a
@@ -315,6 +325,7 @@
             <a class="footer-tel" href="tel:+48-111-111-111">+48 111 111 111</a>
           </address>
         </div>
+        <!-- Nasze socialmedia -->
         <div class="footer-icons">
           <h3>Dołącz do nas</h3>
           <section class="social-media-footer">
@@ -343,6 +354,7 @@
             </ul>
           </section>
         </div>
+        <!-- Newsletter -->
         <div class="form-box">
           <h3>Zapisz się do newslettera</h3>
           <form style="display: flex; align-items: center">
