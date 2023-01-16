@@ -68,25 +68,25 @@
       <div class="container">
         <ul class="filters">
           <li>
-            <button>Wszystkie</button>
+            <button class="filters__button">Wszystkie</button>
           </li>
           <li>
-            <button>Strony</button>
+            <button class="filters__button">Strony</button>
           </li>
           <li>
-            <button>Aplikacje</button>
+            <button class="filters__button">Aplikacje</button>
           </li>
           <li>
-            <button>Dizajn</button>
+            <button class="filters__button">Dizajn</button>
           </li>
           <li>
-            <button>Marketing</button>
+            <button class="filters__button">Marketing</button>
           </li>
         </ul>
         <!-- Nasze Portfolio -->
         <ul class="projects">
           <li class="projects__item">
-            <figure>
+            <figure class="projects__element">
               <div class="projects__item-overlay">
                 <img
                   src="images/portfolio/technocrack.jpg"
@@ -110,7 +110,7 @@
             </figure>
           </li>
           <li class="projects__item">
-            <figure>
+            <figure class="projects__element">
               <div class="projects__item-overlay">
                 <img
                   src="images/portfolio/basketball.jpg"
@@ -136,7 +136,7 @@
             </figure>
           </li>
           <li class="projects__item">
-            <figure>
+            <figure class="projects__element">
               <div class="projects__item-overlay">
                 <img
                   src="images/portfolio/seafood.jpg"
@@ -160,7 +160,7 @@
             </figure>
           </li>
           <li class="projects__item">
-            <figure>
+            <figure class="projects__element">
               <div class="projects__item-overlay">
                 <img
                   src="images/portfolio/headphones.jpg"
@@ -184,7 +184,7 @@
             </figure>
           </li>
           <li class="projects__item">
-            <figure>
+            <figure class="projects__element">
               <div class="projects__item-overlay">
                 <img
                   src="images/portfolio/boxes.jpg"
@@ -208,7 +208,7 @@
             </figure>
           </li>
           <li class="projects__item">
-            <figure>
+            <figure class="projects__element">
               <div class="projects__item-overlay">
                 <img
                   src="images/portfolio/imac.jpg"
@@ -234,7 +234,7 @@
             </figure>
           </li>
           <li class="projects__item">
-            <figure>
+            <figure class="projects__element">
               <div class="projects__item-overlay">
                 <img
                   src="images/portfolio/magazine.jpg"
@@ -258,7 +258,7 @@
             </figure>
           </li>
           <li class="projects__item">
-            <figure>
+            <figure class="projects__element">
               <div class="projects__item-overlay">
                 <img
                   src="images/portfolio/label.jpg"
@@ -282,7 +282,7 @@
             </figure>
           </li>
           <li class="projects__item">
-            <figure>
+            <figure class="projects__element">
               <div class="projects__item-overlay">
                 <img
                   src="images/portfolio/laptop.jpg"
@@ -338,23 +338,23 @@
           <h3 class="footer__socialmedia-title">Dołącz do nas</h3>
           <section>
             <ul class="footer__socialmedia-icons">
-              <li tabindex="0">
+              <li class="footer__socialmedia-icon" tabindex="0">
                 <svg width="20" height="20">
                   <use href="images/icons.svg#icon-instagram"></use>
                 </svg>
               </li>
 
-              <li tabindex="0">
+              <li class="footer__socialmedia-icon" tabindex="0">
                 <svg width="20" height="20">
                   <use href="images/icons.svg#icon-twitter"></use>
                 </svg>
               </li>
-              <li tabindex="0">
+              <li class="footer__socialmedia-icon" tabindex="0">
                 <svg width="20" height="20">
                   <use href="images/icons.svg#icon-facebook"></use>
                 </svg>
               </li>
-              <li tabindex="0">
+              <li class="footer__socialmedia-icon" tabindex="0">
                 <svg width="20" height="20">
                   <use href="images/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -363,15 +363,26 @@
           </section>
         </div>
         <!-- Newsletter -->
-        <div class="footer__form">
-          <h3>Zapisz się do newslettera</h3>
-          <form style="display: flex; align-items: center">
-            <input type="email" name="email" placeholder="example@mail.com" />
+        <div class="footer__newsletter">
+          <h3 class="footer__newsletter-title">Zapisz się do newslettera</h3>
+          <form
+            class="footer__newsletter-form"
+            style="display: flex; align-items: center"
+          >
+            <input
+              class="footer__newsletter-input"
+              type="email"
+              name="email"
+              placeholder="example@mail.com"
+            />
 
-            <button type="submit" class="footer__form-button">
+            <button type="submit" class="footer__newsletter-button">
               Zapisz się
-              <svg width="24" height="24">
-                <use href="images/icons.svg#icon-paper-plane"></use>
+              <svg class="footer__newsletter-button-svg" width="24" height="24">
+                <use
+                  class="footer__newsletter-button-use"
+                  href="images/icons.svg#icon-paper-plane"
+                ></use>
               </svg>
             </button>
           </form>
