@@ -97,16 +97,10 @@
     &-icon:is(:hover, :focus) > svg {
       fill: white;
     }
-    &-icon > svg {
+    &-svg {
       fill: white;
     }
-    &-icon:hover {
-      cursor: pointer;
-      fill: white;
-      background-color: var(--light-blue);
-      border-radius: 50%;
-    }
-    &-icon:focus {
+    &-icon:is(:hover, :focus) {
       cursor: pointer;
       fill: white;
       background-color: var(--light-blue);
@@ -182,4 +176,18 @@
 }
 .footer > div > a {
   margin-bottom: 20px;
+}
+.logo {
+  color: var(--light-blue);
+  line-height: 1.19;
+  text-decoration: none;
+  font-size: 26px;
+  line-height: 1.19;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.03em;
+
+  &__studio--white {
+    color: white;
+  }
 }

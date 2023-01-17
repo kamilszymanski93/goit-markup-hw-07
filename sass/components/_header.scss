@@ -87,7 +87,21 @@
     text-decoration: none;
     fill: currentColor;
   }
-  &__contact-item > svg {
+  &__contact-svg {
     margin-right: 10px;
+  }
+}
+.logo {
+  color: var(--light-blue);
+  line-height: 1.19;
+  text-decoration: none;
+  font-size: 26px;
+  line-height: 1.19;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.03em;
+
+  &__studio {
+    color: black;
   }
 }
