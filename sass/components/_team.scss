@@ -78,7 +78,7 @@
           background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       }
 
-      &:is(:hover, :focus) > svg {
+      &:is(:hover, :focus) > .team__list-svg {
         fill: white;
       }
     }
