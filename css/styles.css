@@ -389,7 +389,7 @@ body {
   display: block;
   letter-spacing: 0.03em;
 }
-.box-portfolio {
+.projects__item {
   display: flex;
   justify-content: center;
 }
